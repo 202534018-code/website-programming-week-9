@@ -1,6 +1,5 @@
 <?php
 declare(strict_types=1);
-
 $query = trim($_GET["query"] ?? "");
 ?>
 <!doctype html>
@@ -18,7 +17,6 @@ $query = trim($_GET["query"] ?? "");
       <input id="query" name="query" value="<?= htmlspecialchars($query, ENT_QUOTES, "UTF-8") ?>">
       <button type="submit">Cari</button>
     </form>
-
     <?php if ($query === ""): ?>
       <p>Silakan masukkan kata kunci.</p>
     <?php else: ?>
